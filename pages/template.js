@@ -8,9 +8,9 @@ const UseStyles = makeStyles((theme) => ({
   },
 }));
 
-const About = () => {
+const Template = () => {
   const classes = UseStyles();
-  return <Box className={classes.root}>About Page</Box>;
+  return <Box className={classes.root}></Box>;
 };
 
-export default About;
+export default Template;
