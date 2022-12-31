@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../styles/theme";
-import { AuthContextProvider } from "../context/authContext";
+import { ContextProvider } from "../context/context";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <AuthContextProvider>
+      <ContextProvider>
         <Component {...pageProps} />
-      </AuthContextProvider>
+      </ContextProvider>
     </ThemeProvider>
   );
 }
